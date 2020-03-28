@@ -1,0 +1,236 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.main{
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding-top: 80px;
+}
+.top-div{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.logo-div, .info-div{
+    padding: 50px 0;
+    font-family: 'Baloo Thambi 2', cursive;
+    width: 50%;
+    color: white;
+}
+.logo-div{
+    text-align: center;
+}
+.logo{
+    width: 60%;
+    border-radius: 50%;
+}
+.info-name{
+    font-size: 54px;
+}
+.info-pursuing{
+    font-size: 48px;
+}
+.info-btn{
+    margin-top: 30px;
+    width: 200px;
+    font-size: 20px !important;
+}
+.header{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.header-item{
+    font-size: 20px;
+}
+.header-item :hover{
+    text-decoration: none;
+}
+.about-div{
+    width: 70%;
+    margin: 0 auto;
+}
+#education, #experience{
+    margin: 30px 0;
+    padding: 20px 0;
+    color: white;
+    background-color: #353c3f;
+}
+.education-div{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.education-title{
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+.education-image{
+    width: 30%;
+}
+.education-detail{
+    width: 60%;
+}
+.institute{
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.school, .college{
+    margin-bottom: 20px;
+}
+.school div{
+    font-size: 18px;
+}
+.books{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid white;
+}
+th, td{
+    width: 150px;
+}
+.skill-div{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.skill-title{
+    font-size: 34px;
+    text-decoration: underline;
+    width: 40%;
+    text-align: right;
+}
+.skill-content{
+    width: 50%;
+    font-size: 18px;
+}
+.post, .company{
+    font-size: 20px;
+}
+.post{
+    margin-top: 20px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.about-div{
+    margin-top: 20px;
+}
+.about-div p{
+    font-size: 20px;
+}
+.mobile-header-content{
+    display: none;
+    position: fixed;
+    transition: 1s ease;
+    top: 0px;
+    bottom: 0px;
+    background-color: #353c3f;
+    /* z-index: 2; */
+    width: 200px;
+}
+.mobile-img-open{
+    display: none;
+    width: 20px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+.mobile-img-close{
+    width: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+#navbar{
+    background-color: white;
+    padding-top: 10px;
+    height: 50px;
+}
+.mobile-header-item{
+    font-size: 20px;
+    margin: 10px;
+}
+@media only screen and (max-width: 942px){
+    .info-name{
+        font-size: 42px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .info-name{
+        font-size: 40px;
+    }
+    .header{
+        width: 100%;
+    }
+    .education-image{
+        display: none;
+    }
+    .education-detail{
+        width: 100%;
+    }
+    .institute{
+        font-size: 16px;
+    }
+    .school div{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .header{
+        display: none;
+    }
+    .mobile-img-open{
+        display: block;
+    }
+    .top-div{
+        flex-direction: column;
+    }
+    .logo{
+        width: 50%;
+    }
+    .main{
+        padding-top: 20px;
+    }
+    .logo-div{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .info-div{
+        margin-top: 20px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .info-btn{
+        width: 160px;
+        margin-top: 8px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .skill-div{
+        width: 100%;
+    }
+    .skill-title{
+        font-size: 28px;
+        width: 30%;
+    }
+    .skill-content{
+        width: 70%;
+    }
+    .info-name{
+        font-size: 30px;
+    }
+}
